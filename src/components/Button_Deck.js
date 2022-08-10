@@ -31,7 +31,7 @@ const Button_Deck = ({
     // resetOperation not being used right now because reset calc does the same thing
     const resetOperation = () => {setOperation(null)}
 
-    // functions to add to the current number
+    // functions to add to the current number(one for each number)
     const addOne = () => {
         if(!progFOperand || !curOperation){
             setPrevNum(null)

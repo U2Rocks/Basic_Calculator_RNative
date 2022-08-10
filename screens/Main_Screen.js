@@ -8,7 +8,7 @@ import Total_screen from '../src/components/Total_screen'
 // -- Zeros are falsy and cause logic errors for buttons
 
 const Main_Screen = () => {
-  // holds record of last math equation(string form)[filled in by mathInProgress obj after calculation]
+  // holds record of last math equation(string form)
   const [mathHistory, setMathHistory] = useState("112 x 2 = 224")
   // holds record of current math equation being done
   const [firstOperand, setFirstOperand] = useState("")

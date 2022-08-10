@@ -7,8 +7,10 @@ import design from '../constants/global'
 
 const Total_screen = ({ historyVal, firstOP, secondOP, operator, prevVal }) => {
 
+    // this state manages whether to show the completed calc or the in progress equation
     const [fancyProgress, setFancyProgress] = useState(null)
 
+    // this function determines when to show the operator and the secondOP
     const modifiedProgess = () => {
         if (operator){
             setFancyProgress(`${firstOP} ${operator} ${secondOP}`)
@@ -18,6 +20,7 @@ const Total_screen = ({ historyVal, firstOP, secondOP, operator, prevVal }) => {
         }
     }
 
+    // the history bar needs to update whenever any equation value changes
     useEffect(() => {
         modifiedProgess()
     }, [firstOP, secondOP, operator, prevVal, historyVal])
