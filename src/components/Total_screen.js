@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react'
 import design from '../constants/global'
 
 // screen where numbers will be displayed and modified
-// logic will most likely like in Main_Screen component
 
 const Total_screen = ({ historyVal, firstOP, secondOP, operator, prevVal }) => {
 
